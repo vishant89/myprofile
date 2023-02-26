@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,83,121,1) 2%, rgba(0,217,255,1) 100%);
+ position: relative;
+}
+header:before{
+    content: "";
+    width: 520px;
+    height: 550px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url("/WhatsApp\ Image\ 2023-02-25\ at\ 22.30.25-modified.png");
+    background-size:100% 100% ;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+   
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+.logo a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+.menu ul li{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.active , ul li:hover{
+ border-top: 2px solid #5dade2 ;
+ border-bottom: 2px solid #5dade2 ;
+ cursor: pointer;
+}
+.contact a{
+    background-color: #008eff;
+    padding:12px 26px ;
+    font-style: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+}
+.contact a:hover{
+    background: linear-gradient(to bottom,#370979 0% , #d465ef 100%); ;
+}
+.center_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.center_content h1{
+    color: aliceblue;
+    font-size: 70px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10px;
+    /* z-index: 1; */
+
+}
+.center_content h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: aliceblue;
+    text-transform: capitalize;
+
+}
+
+.center_content h2:before{
+  content: "";
+  width: 80px ;
+  height: auto;
+  border: 2px solid white;
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+  margin-bottom: 10px;
+
+}
+
+.social_network{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+.fa_icons{
+    width: 40px;
+    height: 40px;
+    border-radius:50% ;
+    background:linear-gradient(to bottom,#008eff 0% , #008eff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa_icons:nth-child(even){
+    margin: 20px 0px;
+}
+.fa_icons:hover{
+    background: linear-gradient(to bottom,#008eff 0% , #008eff 100%);
+}
+.grid_sec{
+    width :300px;
+    height: 100px;
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+    overflow: hidden;
+}
